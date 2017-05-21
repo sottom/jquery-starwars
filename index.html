@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="library.js"></script>
+</head>
+<body>
+<my-component>Hello</my-component>
+<div id="dog">Hello</div>
+
+<script>  
+Vader("#dog")
+	.色("red")
+	.いろ("green")
+	.color("purple")
+	.border('solid', 'black', '3px')
+	.size('400px','400px');
+
+setTimeout(function(){
+	Vader("#dog")
+		.forcePushRight("400px")
+		.feelings("I love you so much Sheri! Thank you for listening to me :) Should we go to bed now? P.S. Dat baby is SoCute!");
+}, 3000);
+
+const template = `
+		<style>
+			#blue {
+				background-color: blue;
+				color: white;
+			}
+		</style>
+		<button id="blue">Sheri is supa' cute!</button>
+	`;
+
+Vader("bob").makeComponent(template);
+
+
+var add_two = function(num1, num2){
+	return num1 + num2;
+};
+add_two(1, 2);
+
+var el = document.getElementById("dog");
+el.style.color = "purple";
+// console.log(Vader("dog"));
+
+// var Vader = function(id){
+// 	document.getElementById(id);
+// };
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
